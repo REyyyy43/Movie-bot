@@ -53,7 +53,20 @@ module.exports = {
                     const replyMessage = `Movie searched: ${movieName}\nTitle: ${movieTitle}\nDescription: ${movieDescription}\nImage: ${imageUrl}`;
         
                     if (!interaction.replied) {
-                        await interaction.reply(replyMessage);
+                        await interaction.reply({
+                            content: replyMessage,
+                            embeds: [{
+                                color: 0xFF0000, // Color rojo en hexadecimal
+                                title: 'Movie Information', // Título del embed
+                                description: 'Details about the movie:', // Descripción del embed
+                                image: { url: imageUrl }, // URL de la imagen que se mostrará
+                                fields: [ // Campos opcionales que puedo agregar
+                                    { name: 'Title', value: movieTitle, inline: true },
+                                    { name: 'Description', value: movieDescription, inline: true },
+                                    // Puedes añadir más campos si lo deseas
+                                ],
+                            }],
+                        });
         
                         // Almacenar solo el nombre de la película en la base de datos SQLite
                         const insertQuery = db.prepare('INSERT INTO Movies (movieName) VALUES (?)');
@@ -61,7 +74,7 @@ module.exports = {
                     }
                 } else {
                     if (!interaction.replied) {
-                        await interaction.reply('Movie image not found.');
+                        await interaction.reply('Movie image not found.', { embeds: [{ color: 0xFF0000 }] });
                     }
                 }
             } else {
