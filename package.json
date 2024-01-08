@@ -1,0 +1,36 @@
+{
+  "name": "bott-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "deploy": "node deploy-commands.js",
+    "create-tables": "node ./database/createTables.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.7.0",
+    "@discordjs/rest": "^2.2.0",
+    "@discordjs/voice": "^0.16.1",
+    "axios": "^1.6.4",
+    "better-sqlite3": "^9.2.2",
+    "discord-api-types": "^0.37.67",
+    "discord-player": "^6.6.6",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "jimp": "^0.22.10",
+    "node-fetch": "^2.7.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "viewer": "^0.10.11",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.1"
+  },
+  "description": ""
+}
