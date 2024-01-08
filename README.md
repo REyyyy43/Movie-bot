@@ -45,7 +45,8 @@ Haz clic en el Generador de URL y selecciona los ámbitos bot y applications.com
 
 Selecciona todos los permisos que el bot necesita para funcionar, mostrados abajo:
 
-![image](https://github.com/REyyyy43/Movie-bot/assets/144262402/3dfa3be5-219e-4dce-b542-a5a1b2132379)
+![image](https://github.com/REyyyy43/Movie-bot/assets/144262402/486042b3-36de-4d5e-9193-77e258e45423)
+
 
 
 Copia la URL inferior y pégala en el navegador de tu preferencia. Esto te llevará a un menú de Discord para seleccionar a qué servidor añadir tu bot. Solo se mostrarán servidores en los que tengas permisos para añadir bots. Selecciona tu servidor y confirma.
