@@ -63,7 +63,7 @@ Comandos Disponibles
    ![image](https://github.com/REyyyy43/Movie-bot/assets/144262402/bb8a54ac-587e-4a68-ae5c-6707b3b8d5c4)
 
 
-3. ` /movie-help ` Muestra una lista de comandos disponibles y su uso.
+3. ` /movie-help ` Muestra una lista de comandos disponibles y su uso al presionar enter.
 
    ![image](https://github.com/REyyyy43/Movie-bot/assets/144262402/f1f51dcd-6b5c-46f8-a496-09cfbd23c28c)
 
@@ -86,15 +86,6 @@ npm install
 ```CMD
 npm start
 ```
-
-## Comando de busqueda de peliculas
-` /search-movie `: Este comando se utiliza para buscar información sobre una película. Ejemplo de uso:
-```CMD
-/search-movie Interstellar
-```
-## Comando de ayuda
-` /movie-help: `
-Muestra la lista de comandos disponibles y cómo usarlos.
 
 ## Interacción con la Base de Datos
 El bot almacena el nombre de las películas buscadas en una base de datos SQLite.
